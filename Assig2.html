@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0130)https://content.sakai.rutgers.edu/access/content/group/0b9e1388-bf1e-48e4-91bd-1fbe2f9ea6a0/Assignments/Assignment%202/Assig2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.4.3.2 (MacOSX)">
+	<meta name="created" content="2011-06-03T00:00:00.011133300">
+	<meta name="changed" content="2015-06-05T19:27:47.400842000">
+	<style type="text/css">
+		h3.cjk { font-family: "Arial Unicode MS" }
+		h3.ctl { font-family: "Arial Unicode MS" }
+		pre.cjk { font-family: "Courier New", monospace }
+	</style>
+</head>
+<body lang="en-US" dir="ltr" cz-shortcut-listen="true">
+<p style="margin-bottom: 0in">Computer Science 111, Summer 2015</p>
+<p align="center" style="margin-bottom: 0.22in"><font color="#222222"><font face="ArialMT, sans-serif"><font size="6" style="font-size: 24pt"><b>Assignment
+2</b></font></font></font></p>
+<p align="left" style="margin-bottom: 0.24in"><font color="#555555"><font face="ArialMT, sans-serif"><font size="5" style="font-size: 17pt"><b>Attached
+files to down load and complete</b></font></font></font></p>
+<ul>
+	<li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Fine.java
+	</font></font></font>
+	</p>
+	</li><li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">TwoSmall.java
+	</font></font></font>
+	</p>
+	</li><li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">ReverseWords.java</font></font></font></p>
+</li></ul>
+<p align="left" style="margin-bottom: 0.24in"><font color="#555555"><font face="ArialMT, sans-serif"><font size="5" style="font-size: 17pt"><b>Overview</b></font></font></font></p>
+<p><font size="4" style="font-size: 14pt">For this assignment, you
+will write three programs in three separate files, which you will
+hand in (<b>the .java files, not the .class files</b>).</font></p>
+<p><font size="4" style="font-size: 14pt">In addition to those three
+files, you also need to down load the “IO Module”, i.e. the <a href="https://sakai.rutgers.edu/access/content/group/6d6f5bb6-32ae-4ea6-8c28-5cb1c8ff3ebe/IO%20module/IO.java">file
+IO</a>,java, from the folder Sakai &gt;</font><font color="#000000">
+</font><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Resources
+&gt; IO module. This file gives you a number of predefined methods
+which you will use to read input from the keyboard and to print
+output in a form that our grading program can understand. Do not
+modify or hand in the IO module.&nbsp;</font></font></font><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><b>Before
+you begin, read this document:&nbsp;<a href="https://sakai.rutgers.edu/access/content/group/6d6f5bb6-32ae-4ea6-8c28-5cb1c8ff3ebe/IO%20module/io-tutorial.html" target="_blank">How
+to use the IO module in programming assignments</a></b></font></font></font><font color="#000000">
+</font><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><span style="font-weight: normal">in
+the file io-tutorial.html which is also in the Resources folder
+Resources &gt; IO module. Note that you do not have to understand </span></font></font></font><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><i><span style="font-weight: normal">how</span></i></font></font></font><span style="font-variant: normal"><font color="#000000">
+</font></span><span style="font-variant: normal"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">the
+methods in IO.java work, you just have to know </span></span></font></font></font></span><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><i><span style="font-weight: normal">what</span></i></font></font></font><span style="font-variant: normal"><font color="#000000">
+</font></span><span style="font-variant: normal"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><span style="font-style: normal"><span style="font-weight: normal">they
+do and how to call them.</span></span></font></font></font></span></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Be
+sure to choose appropriate test cases to test each of your programs
+thoroughly,&nbsp;<b>including error conditions</b>. Test your program
+on all of your test cases - remember that a program that does the
+correct thing for one set of input data may not behave correctly for
+other sets of input data. You do not have to submit your test cases,
+however.</font></font></font></p>
+<p align="left" style="margin-bottom: 0.24in"><font color="#555555"><font face="ArialMT, sans-serif"><font size="5" style="font-size: 17pt"><b>Links
+to Documentation</b></font></font></font></p>
+<p align="left" style="margin-bottom: 0.24in; font-weight: normal"><font color="#555555"><font face="Times, serif"><font size="4" style="font-size: 14pt">Some
+of the following String methods may be useful: </font></font></font>
+</p>
+<ul>
+	<li>
+<p align="left" style="margin-bottom: 0.17in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#charAt%28int%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">charAt</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#compareTo%28java.lang.String%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">compareTo</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#compareToIgnoreCase%28java.lang.String%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">compareToIgnoreCase</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#concat%28java.lang.String%29" target="_blank">concat</a>&nbsp;(+)</font></font></font></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#endsWith%28java.lang.String%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">endsWith</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#equals%28java.lang.Object%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">equals</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#equalsIgnoreCase%28java.lang.String%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">equalsIgnoreCase</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#indexOf%28int%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">indexOf</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#lastIndexOf%28int%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">lastIndexOf</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#length%28%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">length</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#startsWith%28java.lang.String%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">startsWith</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#substring%28int,%20int%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">substring</font></font></font></a></p>
+	</li><li>
+<p style="margin-bottom: 0in"><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#toLowerCase%28%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">toLowerCase</font></font></font></a></p>
+	</li><li>
+<p><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#toUpperCase%28%29" target="_blank"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">toUpperCase</font></font></font></a></p>
+</li></ul>
+<p align="left" style="margin-bottom: 0.24in"><font color="#555555"><font face="ArialMT, sans-serif"><font size="5" style="font-size: 17pt"><b>Problems</b></font></font></font></p>
+<h3 class="western" align="left" style="margin-top: 0in; margin-bottom: 0in">
+<font color="#800000"><font face="TrebuchetMS, sans-serif"><font size="4" style="font-size: 14pt"><b>Problem
+1</b></font></font></font></h3>
+<p><font size="4" style="font-size: 14pt">Write your program in the
+file Fine.java.</font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">This
+program computes computes the overdue penalties (if any) on a library
+book when it is returned. The fee schedule is:</font></font></font></p>
+<ul>
+	<li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">For
+	every day late up to and including 7 days, the late fee is 10 cents
+	per day.</font></font></font></p>
+	</li><li>
+<p style="margin-bottom: 0in"><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Beyond
+	7 days, for every day late up to and including 90 days, the late fee
+	is 20 cents per day (example: a book returned 10 days late incurs a
+	late fee of $1.30 late fee – 10 cents for each of the first 7 days
+	plus 20 cents for each of the remaining 3 days).</font></font></font></p>
+	</li><li>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Beyond
+	90 days, an unreturned book is considered lost. All late fees are
+	waived (i.e. are not charged), but the borrower is charged the cost
+	of the book, plus a $10 restocking fee.</font></font></font></p>
+</li></ul>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Ask
+the user for the number of days the book is late, and cost of the
+book&nbsp;<b>in that order</b>. Always ask for the cost of the book
+no matter what number of days late is given. Output one number, the
+fine as a number of cents. (So if the fine is $1.35 the program
+should print 135.) Do&nbsp;<b>NOT</b>&nbsp;use functions in the IO
+module print anything except this number.</font></font></font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Example:</font></font></font></p>
+<pre class="western"><font size="4" style="font-size: 14pt">java Fine</font>
+<font size="4" style="font-size: 14pt">Days late?</font>
+<font size="4" style="font-size: 14pt">7</font>
+<font size="4" style="font-size: 14pt">Book cost?</font>
+<font color="#000000"><font size="4" style="font-size: 14pt">2000</font></font>
+<font size="4" style="font-size: 14pt">RESULT: 70</font></pre><p>
+<font size="4" style="font-size: 14pt">Note that "Days late?"
+and “Book cost?” must be printed using System.out.println, and
+the line "RESULT: ..." must be printed by
+IO.<font color="#000000">out</font>putIntAnswer.</font></p>
+<h3 class="western" align="left" style="margin-top: 0in; margin-bottom: 0in; page-break-after: avoid">
+<font color="#800000"><font face="TrebuchetMS, sans-serif"><font size="4" style="font-size: 14pt">Problem
+2</font></font></font></h3>
+<p><font size="4" style="font-size: 14pt">Write your program in the
+file TwoSmall.java.</font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Input
+a set of positive integers, ending with -1 as a sentinel. Print the
+smallest and second smallest of these numbers&nbsp;<b>in that order</b>.</font></font></font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">You
+may assume there are always at least two numbers before the -1; you
+do <b>NOT</b> have to check for this being true.</font></font></font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Examples:</font></font></font></p>
+<pre class="western"><font color="#0000ff"><font size="4" style="font-size: 14pt">java TwoSmall</font></font>
+<font color="#0000ff"><font size="4" style="font-size: 14pt">32</font></font>
+<font color="#0000ff"><font size="4" style="font-size: 14pt">11</font></font>
+<font color="#0000ff"><font size="4" style="font-size: 14pt">19</font></font>
+<font color="#0000ff"><font size="4" style="font-size: 14pt">7</font></font>
+<font color="#0000ff"><font size="4" style="font-size: 14pt">-1</font></font>
+<font size="4" style="font-size: 14pt">RESULT: 7</font>
+<font size="4" style="font-size: 14pt">RESULT: 11</font>
+<font color="#0000ff">java TwoSmall</font>
+<font color="#0000ff">20</font>
+<font color="#0000ff">34</font>
+<font color="#0000ff">20</font>
+<font color="#0000ff">-1</font>
+RESULT: 20
+<font size="4" style="font-size: 14pt">RESULT: 20</font></pre><p>
+<font size="4" style="font-size: 14pt"><font color="#0000ff">java
+TwoSmall<br>
+20<br>
+3<br>
+20<br>
+-1</font><br>
+RESULT: 3<br>
+RESULT:
+20</font></p>
+<p><font size="4" style="font-size: 14pt">In these examples, the
+lines in <font color="#0000ff">blue </font>are typed by you and the
+lines that start "RESULT:" are printed by your program,
+using IO.<font color="#000000">o</font>utputIntAnswer.</font></p>
+<p><font size="4" style="font-size: 14pt">Hint: Suppose the smallest
+number you have seen so far is 10 and the second smallest is 15. Now
+you see 5. What are the new smallest and second smallest numbers?
+Suppose instead of 5 you saw 12, what are the new smallest and second
+smallest? What if you saw 20 instead of 5?</font></p>
+<h3 class="western" align="left" style="margin-top: 0in; margin-bottom: 0in; page-break-after: avoid">
+<font color="#800000"><font face="TrebuchetMS, sans-serif"><font size="4" style="font-size: 14pt">Problem
+3</font></font></font></h3>
+<p><font size="4" style="font-size: 14pt">Write your program in the
+file ReverseWords.java.</font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">This
+program should read a line of text and print it back with each word
+reversed.</font></font></font></p>
+<p><font color="#000000"><font face="Times"><font size="4" style="font-size: 14pt">Example:</font></font></font></p>
+<pre class="western"><font size="4" style="font-size: 14pt">java ReverseWords</font>
+
+<font size="4" style="font-size: 14pt">Four score and seven years ago</font>
+
+<font size="4" style="font-size: 14pt">RESULT:  ruoF erocs dna neves sraey oga</font></pre><p>
+<font size="4" style="font-size: 14pt">Note that the line "RESULT:
+ruoF</font> <font size="4" style="font-size: 14pt">..." must be
+printed using </font><font color="#000000"><font size="4" style="font-size: 14pt">IO.outputStringAnswer.
+&nbsp;You may assume that there is exactly one space between words in
+the input line, and no spaces</font></font><font color="#000000">
+</font><font color="#000000"><font size="4" style="font-size: 14pt">before
+the first word or after the last. Any character other than space or
+upper or lower cas</font></font><font size="4" style="font-size: 14pt">e
+letters is an error, which should cause your program to call
+IO.reportBadInput. You do not have to check or change the case of any
+letters.</font></p>
+<p align="left" style="margin-bottom: 0.24in"><font color="#555555"><font face="ArialMT, sans-serif"><font size="5" style="font-size: 17pt"><b>Handing
+in</b></font></font></font></p>
+<p style="font-weight: normal"><font color="#000000"><font face="Times, serif"><font size="4" style="font-size: 14pt">Attach
+each of the three files Fine.java, TwoSmall.java, and
+ReverseWords.java as separate attachments to this assignment on
+Sakai. Note that this assignment is due at 7 PM, Wednesday evening,
+June 17.</font></font></font></p>
+
+</body></html>

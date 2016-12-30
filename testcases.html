@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0164)https://content.sakai.rutgers.edu/access/content/attachment/0b9e1388-bf1e-48e4-91bd-1fbe2f9ea6a0/Assignments%202/43c92924-ee87-4d84-b961-02f9ad7379ee/testcases.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="Content-Style-Type" content="text/css"> 
+    <title>testcases.html</title>
+    <link href="./testcases_files/tool_base.css" type="text/css" rel="stylesheet" media="all">
+    <link href="./testcases_files/tool.css" type="text/css" rel="stylesheet" media="all">
+    <script type="text/javascript" src="./testcases_files/headscripts.js.download"></script>
+<script type="text/javascript" src="./testcases_files/kaltura-upgrade.js.download"></script>    <style>body { padding: 5px !important; }</style>
+  </head>
+  <body cz-shortcut-listen="true">
+<pre>Inputs and outputs are preceded by data type.<br>"@action badinput" indicates a call to IO.reportBadInput().<br>Answers of type double are rounded to 2 decimal places before being checked.
+
+<h3>Problem 1 (Fine)</h3>
+<!-- GenericProgramGrader -->
+<!-- Fine -->
+<ol>
+
+<li>
+2 points
+#inputs
+int -1
+int 100
+#outputs
+@action badinput
+#end
+
+</li><li>
+2 points
+#inputs
+int 1
+int 0
+#outputs
+@action badinput
+#end
+
+</li><li>
+3 points
+#inputs
+int 1
+int 1
+#outputs
+int 10
+#end
+
+</li><li>
+3 points
+#inputs
+int 6
+int 1000
+#outputs
+int 60
+#end
+
+</li><li>
+4 points
+#inputs
+int 7
+int 1000
+#outputs
+int 70
+#end
+
+</li><li>
+3 points
+#inputs
+int 8
+int 1000
+#outputs
+int 90
+#end
+
+</li><li>
+4 points
+#inputs
+int 89
+int 1000
+#outputs
+int 1710
+#end
+
+</li><li>
+4 points
+#inputs
+int 90
+int 1000
+#outputs
+int 1730
+#end
+
+</li><li>
+4 points
+#inputs
+int 91
+int 1000
+#outputs
+int 2000
+#end
+
+</li><li>
+4 points
+#inputs
+int 100
+int 2005
+#outputs
+int 3005
+#end
+
+</li></ol>
+
+<h3>Problem 2 (TwoSmall)</h3>
+<!-- GenericProgramGrader -->
+<!-- TwoSmall -->
+<ol>
+
+<li>
+2 points
+#inputs
+int 10
+int 4
+int 0
+#outputs
+@action reportBadInput
+#end
+
+</li><li>
+2 points
+#inputs
+int 0
+#outputs
+@action reportBadInput
+#end
+
+</li><li>
+2 points
+#inputs
+int 4
+int 0
+#outputs
+@action reportBadInput
+#end
+
+</li><li>
+3 points
+#inputs 
+int 4
+int 5
+int 6
+int 7
+int -1
+#outputs
+int 4
+int 5
+#end
+
+</li><li>
+4 points
+#inputs 
+int 5
+int 4
+int -1
+#outputs
+int 4
+int 5
+#end
+
+</li><li>
+4 points
+#inputs
+int 4
+int 5
+int 2
+int 1
+int -1
+#outputs
+int 1
+int 2
+#end
+
+</li><li>
+4 points
+#inputs
+int 5
+int 6
+int 1
+int 2
+int -1
+#outputs
+int 1
+int 2
+#end
+
+</li><li>
+4 points
+#inputs
+int 9
+int 11
+int 4
+int 11
+int 5
+int 55
+int -1
+#outputs
+int 4
+int 5
+#end
+
+</li><li>
+4 points
+#inputs
+int 9
+int 9
+int 10
+int -1
+#outputs
+int 9
+int 9
+#end
+
+</li><li>
+4 points
+#inputs
+int 7
+int 3
+int 8
+int 10
+int 3
+int 2
+int -1
+#outputs
+int 2
+int 3
+#end
+
+</li></ol>
+
+
+<h3>Problem 3 (ReverseWords)</h3>
+<!-- GenericProgramGrader -->
+<!-- ReverseWords-->
+<ol>
+
+<li>
+4 points
+#inputs
+string "a"
+#outputs 
+string "a"
+#end
+
+</li><li>
+4 points
+#inputs
+string "a+"
+#outputs
+@action badinput
+#end
+
+</li><li>
+4 points
+#inputs
+string "+"
+#outputs
+@action badinput
+#end
+
+</li><li>
+4 points
+#inputs
+string "abc"
+#outputs
+string "cba"
+#end
+
+</li><li>
+4 points
+#inputs
+string "j ab f"
+#outputs
+string "j ba f"
+#end
+
+</li><li>
+4 points
+#inputs
+string "an ounce"
+#outputs
+string "na ecnuo"
+#end
+
+</li><li>
+10 points
+#inputs
+string "once upon a time"
+#outputs
+string "ecno nopu a emit"
+#end
+
+</li></ol>
+
+
+
+</pre>
+
+  
+
+</body></html>
